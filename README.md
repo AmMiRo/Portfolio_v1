@@ -2,11 +2,15 @@
 
 This site is the portfolio for Amos Rose. It's purpose is to serve as a place to showcase his skills and projects as a developer.
 
+## A live version of this site can be found at https://amosrose.co
+
 ## Tech Stack
 
 React | Javascript | HTML | CSS | LESS
 
 ### React
+
+---
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -79,11 +83,13 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 
 ### JavaScript
 
+---
+
 For documentation on JavaScript, check out: https://developer.mozilla.org/en-US/docs/Web/JavaScript
 
-### HTML
-
 ### LESS
+
+---
 
 LESS was used as the language extension for CSS. For more information checkout http://lesscss.org
 
