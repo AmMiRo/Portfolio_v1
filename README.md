@@ -2,11 +2,17 @@
 
 This site is the portfolio for Amos Rose. It's purpose is to serve as a place to showcase his skills and projects as a developer.
 
+***
+
 ## A live version of this site can be found at https://amosrose.co
+
+***
 
 ## Tech Stack
 
 React | Javascript | HTML | CSS | LESS
+
+***
 
 ### React
 
