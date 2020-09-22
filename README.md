@@ -77,6 +77,12 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
 
+### JavaScript
+
+For documentation on JavaScript, check out: https://developer.mozilla.org/en-US/docs/Web/JavaScript
+
+### HTML
+
 ### LESS
 
 LESS was used as the language extension for CSS. For more information checkout http://lesscss.org
