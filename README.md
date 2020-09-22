@@ -1,4 +1,4 @@
-# portfolio
+# Portfolio
 
 This site is the portfolio for Amos Rose. It's purpose is to serve as a place to showcase his skills and projects as a developer.
 
