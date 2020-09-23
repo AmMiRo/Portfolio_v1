@@ -9,10 +9,10 @@ function Header() {
         <img className="header-logo" src={Logo} alt="A|R Logo" />
       </div>
       <nav>
-        <a>Home</a>
+        <a>Top</a>
         <a>Skills</a>
         <a>Projects</a>
-        <a>Contact Me</a>
+        <a>Contact</a>
       </nav>
     </header>
   );
