@@ -189,6 +189,7 @@ article {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  min-height: 92.5vh;
 }
 article .photo-greeting {
   display: flex;
@@ -245,4 +246,30 @@ article .button:hover {
 article .button:active {
   opacity: 1;
   box-shadow: inset -4px -4px 8px rgba(255, 255, 255, 0.5), inset 8px 8px 16px rgba(0, 0, 0, 0.1);
+}
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 1200px;
+  max-width: 80%;
+  margin: 100px auto;
+}
+.skills-container .skill-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+}
+.skills-container .skill-wrapper img {
+  max-width: 75px;
+  max-height: 75px;
+}
+.skills-container .skill-wrapper p {
+  color: #191919;
+  text-align: center;
 }
