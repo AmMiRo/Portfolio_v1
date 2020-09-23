@@ -160,7 +160,7 @@ header {
   justify-content: space-between;
   align-items: center;
   background-color: #3e3e3e;
-  height: 10vh;
+  height: 7.5vh;
 }
 header .header-title {
   height: 100%;
@@ -176,9 +176,73 @@ header nav {
   justify-content: space-between;
   align-items: center;
   width: 30%;
+  max-width: 450px;
   margin-right: 5%;
 }
 header nav a {
   color: #ffffff;
-  font-size: 2rem;
+  font-size: 2.4rem;
+}
+article {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+article .photo-greeting {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 100px;
+  width: 800px;
+  max-width: 90%;
+}
+article .photo-greeting img {
+  border-radius: 100%;
+  width: 250px;
+}
+article .photo-greeting .greeting {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+article .photo-greeting .greeting h1 {
+  font-size: 7rem;
+  color: #191919;
+}
+article .photo-greeting .greeting h1 strong {
+  font-weight: 600;
+}
+article .photo-greeting .greeting h2 {
+  color: #3e3e3e;
+  margin-top: 25px;
+}
+article .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  background-color: #689689;
+  color: #191919;
+  text-decoration: none;
+  width: 200px;
+  height: 50px;
+  border-radius: 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.8), 6px 6px 10px rgba(0, 0, 0, 0.2);
+}
+article .button:hover {
+  opacity: 0.9;
+  box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.8), 6px 6px 10px rgba(0, 0, 0, 0.2);
+}
+article .button:active {
+  opacity: 1;
+  box-shadow: inset -4px -4px 8px rgba(255, 255, 255, 0.5), inset 8px 8px 16px rgba(0, 0, 0, 0.1);
 }

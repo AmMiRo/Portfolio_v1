@@ -1,0 +1,36 @@
+article {
+  .flexbox(nowrap, column, center, center);
+
+  .photo-greeting {
+    .flexbox(nowrap, row, space-around, center);
+    margin-top: 100px;
+    width: 800px;
+    max-width: 90%;
+
+    img {
+      border-radius: 100%;
+      width: 250px;
+    } // closes img
+
+    .greeting {
+      .flexbox(nowrap, column, center, center);
+
+      h1 {
+        font-size: 7rem;
+        color: @black;
+
+        strong {
+          font-weight: 600;
+        } // closes strong
+      } // closes h1
+      h2 {
+        color: @dark-gray;
+        margin-top: 25px;
+      }
+    } // closes .greeting
+  } // closes .photo-greeting
+
+  .button {
+    .buttons(@green, @black, 50px, 200px);
+  } // closes a
+} // closes article
