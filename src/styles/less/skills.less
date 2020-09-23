@@ -1,0 +1,21 @@
+.skills-container {
+  .flexbox(wrap, row, center, center);
+  width: 1200px;
+  max-width: 80%;
+  margin: 100px auto;
+
+  .skill-wrapper {
+    .flexbox(nowrap, column, space-between, center);
+    margin: 20px;
+
+    img {
+      max-width: 75px;
+      max-height: 75px;
+    } // closes img
+
+    p {
+      color: @black;
+      text-align: center;
+    } // closes p
+  } // closes .skill-wrapper
+} // closes .skills-container
