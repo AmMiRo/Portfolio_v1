@@ -1,0 +1,52 @@
+.projects-container {
+  .flexbox(nowrap, column, space-around, center);
+  background-image: url(../../images/fabric_1.png);
+  background-repeat: repeat;
+
+  h2 {
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 600;
+    margin-top: 100px;
+  } // closes h2
+
+  .project-wrapper {
+    .flexbox(nowrap, row, space-around, flex-start);
+    width: 1000px;
+    max-width: 80%;
+    margin-top: 75px;
+
+    img {
+      width: 250px;
+      max-width: 25%;
+    } // closes img
+
+    .project-description {
+      text-align: center;
+      width: 750px;
+      max-width: 60%;
+
+      h3 {
+        text-decoration: underline;
+      } // closes h3
+
+      p {
+        margin-top: 20px;
+        span {
+          font-size: 2rem;
+        } // closes span
+      } // closes p
+
+      ul {
+        list-style-type: disc;
+        font-size: 1.6rem;
+        text-align: left;
+        margin-top: 20px;
+
+        li {
+          line-height: 2.2rem;
+        } // closes li
+      } // closes ul
+    } // closes .project-description
+  } // closes .project-wrapper
+} // closes .projects-container

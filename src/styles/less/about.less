@@ -1,0 +1,29 @@
+.about-wrapper {
+  .flexbox(nowrap, column, space-between, center);
+  background-color: @green;
+
+  .about-content {
+    text-align: center;
+    color: @white;
+    width: 1000px;
+    max-width: 80%;
+    margin: 0 auto;
+
+    h2 {
+      font-size: 3.6rem;
+      margin-top: 100px;
+    } // closes h2
+
+    p {
+      font-size: 2.4rem;
+      margin-top: 50px;
+      line-height: 3.6rem;
+      font-weight: 100;
+    } // closes p
+  } // closes .about-content
+
+  .arrow-wrapper {
+    .arrow-color(@white, @green);
+    margin-top: 100px;
+  } // closes .arrow-wrapper
+} // closes .about-wrapper

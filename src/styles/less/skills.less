@@ -1,22 +1,52 @@
 .skills-container {
-  .flexbox(wrap, row, center, flex-end);
-  width: 1200px;
-  max-width: 80%;
-  margin: 100px auto;
+  .flexbox(nowrap, column, space-between, center);
+  background-color: @white;
 
-  .skill-wrapper {
-    .flexbox(nowrap, column, space-between, center);
-    margin: 20px;
+  h2 {
+    font-size: 3.6rem;
+    margin-top: 100px;
+  } // closes h2
 
-    img {
-      width: 75px;
-      height: 75px;
-    } // closes img
+  p {
+    font-size: 1.8rem;
+    margin-top: 25px;
 
-    p {
-      color: @black;
-      text-align: center;
-      margin-top: 5px;
-    } // closes p
-  } // closes .skill-wrapper
+    span {
+      font-size: 2.2rem;
+    } // closes span
+  } // closes p
+
+  .skills-wrapper {
+    .flexbox(wrap, row, center, flex-end);
+    width: 1200px;
+    max-width: 80%;
+    margin: 100px auto;
+
+    .skill-wrapper {
+      .flexbox(nowrap, column, space-between, center);
+      margin: 20px;
+
+      img {
+        width: 75px;
+        height: 75px;
+      } // closes img
+
+      p {
+        color: @black;
+        text-align: center;
+        margin-top: 5px;
+      } // closes p
+    } // closes .skill-wrapper
+  } // closes .skills-wrapper
+
+  .arrow-wrapper {
+    background-image: url(../../images/fabric_1.png);
+    background-repeat: repeat;
+    height: 100px;
+    width: 100%;
+
+    polygon {
+      fill: @white;
+    } // closes polygon
+  } // closes .arrow-wrapper
 } // closes .skills-container

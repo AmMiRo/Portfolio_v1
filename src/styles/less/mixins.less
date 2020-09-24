@@ -34,3 +34,13 @@
       inset 8px 8px 16px rgba(0, 0, 0, 0.1);
   } // closes &:active
 } // closes .button
+
+.arrow-color(@bg-color, @poly-color) {
+  background-color: @bg-color;
+  height: 100px;
+  width: 100%;
+
+  polygon {
+    fill: @poly-color;
+  } // closes polygon
+} // closes .arrow-wrapper

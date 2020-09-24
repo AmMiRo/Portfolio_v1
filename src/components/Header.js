@@ -10,6 +10,7 @@ function Header() {
       </div>
       <nav>
         <a>Top</a>
+        <a>About</a>
         <a>Projects</a>
         <a>Contact</a>
       </nav>
