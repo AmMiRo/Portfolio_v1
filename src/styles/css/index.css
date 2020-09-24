@@ -135,8 +135,6 @@ html {
 }
 body {
   font-family: "Roboto", sans-serif;
-  background-image: url(../../images/fabric_1.png);
-  background-repeat: repeat;
 }
 h1 {
   font-size: 4.8rem;
@@ -161,6 +159,9 @@ header {
   align-items: center;
   background-color: #3e3e3e;
   height: 7.5vh;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 header .header-title {
   height: 100%;
@@ -176,54 +177,64 @@ header nav {
   justify-content: space-between;
   align-items: center;
   width: 30%;
-  max-width: 450px;
+  max-width: 350px;
   margin-right: 5%;
 }
 header nav a {
   color: #ffffff;
-  font-size: 2.4rem;
+  font-size: 2rem;
 }
-article {
+.home-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+}
+.home-wrapper .home-content {
   display: flex;
   flex-wrap: nowrap;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 92.5vh;
 }
-article .photo-greeting {
+.home-wrapper .home-content .photo-greeting {
   display: flex;
   flex-wrap: nowrap;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  margin-top: 100px;
+  margin-top: 25vh;
   width: 800px;
   max-width: 90%;
 }
-article .photo-greeting img {
+.home-wrapper .home-content .photo-greeting img {
   border-radius: 100%;
   width: 250px;
 }
-article .photo-greeting .greeting {
+.home-wrapper .home-content .photo-greeting .greeting {
   display: flex;
   flex-wrap: nowrap;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-article .photo-greeting .greeting h1 {
+.home-wrapper .home-content .photo-greeting .greeting h1 {
   font-size: 7rem;
   color: #191919;
 }
-article .photo-greeting .greeting h1 strong {
+.home-wrapper .home-content .photo-greeting .greeting h1 strong {
   font-weight: 600;
 }
-article .photo-greeting .greeting h2 {
+.home-wrapper .home-content .photo-greeting .greeting h2 {
   color: #3e3e3e;
   margin-top: 25px;
 }
-article .button {
+.home-wrapper .home-content p {
+  margin-top: 50px;
+}
+.home-wrapper .home-content .button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -239,15 +250,76 @@ article .button {
   transition: all 0.2s ease-in-out;
   box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.8), 6px 6px 10px rgba(0, 0, 0, 0.2);
 }
-article .button:hover {
+.home-wrapper .home-content .button:hover {
   opacity: 0.9;
   box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.8), 6px 6px 10px rgba(0, 0, 0, 0.2);
 }
-article .button:active {
+.home-wrapper .home-content .button:active {
   opacity: 1;
   box-shadow: inset -4px -4px 8px rgba(255, 255, 255, 0.5), inset 8px 8px 16px rgba(0, 0, 0, 0.1);
 }
+.home-wrapper .arrow-wrapper {
+  background-color: #689689;
+  height: 100px;
+  width: 100%;
+}
+.home-wrapper .arrow-wrapper polygon {
+  fill: #ffffff;
+}
+.about-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #689689;
+}
+.about-wrapper .about-content {
+  text-align: center;
+  color: #ffffff;
+  width: 1000px;
+  max-width: 80%;
+  margin: 0 auto;
+}
+.about-wrapper .about-content h2 {
+  font-size: 3.6rem;
+  margin-top: 100px;
+}
+.about-wrapper .about-content p {
+  font-size: 2.4rem;
+  margin-top: 50px;
+  line-height: 3.6rem;
+  font-weight: 100;
+}
+.about-wrapper .arrow-wrapper {
+  background-color: #ffffff;
+  height: 100px;
+  width: 100%;
+  margin-top: 100px;
+}
+.about-wrapper .arrow-wrapper polygon {
+  fill: #689689;
+}
 .skills-container {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+}
+.skills-container h2 {
+  font-size: 3.6rem;
+  margin-top: 100px;
+}
+.skills-container p {
+  font-size: 1.8rem;
+  margin-top: 25px;
+}
+.skills-container p span {
+  font-size: 2.2rem;
+}
+.skills-container .skills-wrapper {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -257,7 +329,7 @@ article .button:active {
   max-width: 80%;
   margin: 100px auto;
 }
-.skills-container .skill-wrapper {
+.skills-container .skills-wrapper .skill-wrapper {
   display: flex;
   flex-wrap: nowrap;
   flex-direction: column;
@@ -265,12 +337,73 @@ article .button:active {
   align-items: center;
   margin: 20px;
 }
-.skills-container .skill-wrapper img {
+.skills-container .skills-wrapper .skill-wrapper img {
   width: 75px;
   height: 75px;
 }
-.skills-container .skill-wrapper p {
+.skills-container .skills-wrapper .skill-wrapper p {
   color: #191919;
   text-align: center;
   margin-top: 5px;
+}
+.skills-container .arrow-wrapper {
+  background-image: url(../../images/fabric_1.png);
+  background-repeat: repeat;
+  height: 100px;
+  width: 100%;
+}
+.skills-container .arrow-wrapper polygon {
+  fill: #ffffff;
+}
+.projects-container {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-image: url(../../images/fabric_1.png);
+  background-repeat: repeat;
+}
+.projects-container h2 {
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 600;
+  margin-top: 100px;
+}
+.projects-container .project-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 1000px;
+  max-width: 80%;
+  margin-top: 75px;
+}
+.projects-container .project-wrapper img {
+  width: 250px;
+  max-width: 25%;
+}
+.projects-container .project-wrapper .project-description {
+  text-align: center;
+  width: 750px;
+  max-width: 60%;
+}
+.projects-container .project-wrapper .project-description h3 {
+  text-decoration: underline;
+}
+.projects-container .project-wrapper .project-description p {
+  margin-top: 20px;
+}
+.projects-container .project-wrapper .project-description p span {
+  font-size: 2rem;
+}
+.projects-container .project-wrapper .project-description ul {
+  list-style-type: disc;
+  font-size: 1.6rem;
+  text-align: left;
+  margin-top: 20px;
+}
+.projects-container .project-wrapper .project-description ul li {
+  line-height: 2.2rem;
 }
