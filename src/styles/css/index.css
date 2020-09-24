@@ -233,6 +233,9 @@ header nav a {
 }
 .home-wrapper .home-content p {
   margin-top: 50px;
+  font-size: 2.4rem;
+  max-width: 80%;
+  text-align: center;
 }
 .home-wrapper .home-content .button {
   display: flex;
@@ -366,8 +369,7 @@ header nav a {
 }
 .projects-container h2 {
   text-align: center;
-  font-size: 4rem;
-  font-weight: 600;
+  font-size: 3.6rem;
   margin-top: 100px;
 }
 .projects-container .project-wrapper {
@@ -375,35 +377,33 @@ header nav a {
   flex-wrap: nowrap;
   flex-direction: row;
   justify-content: space-around;
-  align-items: flex-start;
+  align-items: center;
   width: 1000px;
   max-width: 80%;
+  height: 350px;
   margin-top: 75px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px 1px rgba(0, 0, 0, 0.25);
 }
 .projects-container .project-wrapper img {
   width: 250px;
-  max-width: 25%;
+  box-shadow: 10px 10px 5px -5px rgba(0, 0, 0, 0.5);
+}
+.projects-container .project-wrapper .radius-img {
+  border-radius: 20px;
 }
 .projects-container .project-wrapper .project-description {
-  text-align: center;
   width: 750px;
   max-width: 60%;
 }
-.projects-container .project-wrapper .project-description h3 {
-  text-decoration: underline;
-}
 .projects-container .project-wrapper .project-description p {
   margin-top: 20px;
+  line-height: 3rem;
 }
 .projects-container .project-wrapper .project-description p span {
   font-size: 2rem;
 }
-.projects-container .project-wrapper .project-description ul {
-  list-style-type: disc;
-  font-size: 1.6rem;
-  text-align: left;
-  margin-top: 20px;
-}
-.projects-container .project-wrapper .project-description ul li {
-  line-height: 2.2rem;
+.projects-container .project-end {
+  margin-bottom: 100px;
 }
