@@ -5,48 +5,56 @@
 
   h2 {
     text-align: center;
-    font-size: 4rem;
-    font-weight: 600;
+    font-size: 3.6rem;
     margin-top: 100px;
   } // closes h2
 
   .project-wrapper {
-    .flexbox(nowrap, row, space-around, flex-start);
+    .flexbox(nowrap, row, space-around, center);
     width: 1000px;
     max-width: 80%;
+    min-height: 350px;
     margin-top: 75px;
+    background-color: @white;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px 1px rgba(0, 0, 0, 0.25);
 
     img {
       width: 250px;
-      max-width: 25%;
+      box-shadow: 10px 10px 5px -5px rgba(0, 0, 0, 0.5);
     } // closes img
 
+    .radius-img {
+      border-radius: 20px;
+    }
+
     .project-description {
-      text-align: center;
       width: 750px;
       max-width: 60%;
 
       h3 {
-        text-decoration: underline;
+        margin-top: 15px;
       } // closes h3
 
       p {
         margin-top: 20px;
+        line-height: 3rem;
         span {
           font-size: 2rem;
         } // closes span
       } // closes p
 
-      ul {
-        list-style-type: disc;
-        font-size: 1.6rem;
-        text-align: left;
-        margin-top: 20px;
+      .button-container {
+        .flexbox(wrap, row, space-around, center);
 
-        li {
-          line-height: 2.2rem;
-        } // closes li
-      } // closes ul
+        .button {
+          .buttons(@dark-gray, @white, 50px, 200px);
+          margin: 15px;
+        } // closes .button
+      } // closes .button-container
     } // closes .project-description
   } // closes .project-wrapper
+  .project-end {
+    margin-bottom: 100px;
+  } // closes .project-end
 } // closes .projects-container
