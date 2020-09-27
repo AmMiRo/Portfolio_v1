@@ -13,7 +13,7 @@
     .flexbox(nowrap, row, space-around, center);
     width: 1000px;
     max-width: 80%;
-    height: 350px;
+    min-height: 350px;
     margin-top: 75px;
     background-color: @white;
     border-radius: 10px;
@@ -32,6 +32,10 @@
       width: 750px;
       max-width: 60%;
 
+      h3 {
+        margin-top: 15px;
+      } // closes h3
+
       p {
         margin-top: 20px;
         line-height: 3rem;
@@ -39,6 +43,15 @@
           font-size: 2rem;
         } // closes span
       } // closes p
+
+      .button-container {
+        .flexbox(wrap, row, space-around, center);
+
+        .button {
+          .buttons(@dark-gray, @white, 50px, 200px);
+          margin: 15px;
+        } // closes .button
+      } // closes .button-container
     } // closes .project-description
   } // closes .project-wrapper
   .project-end {

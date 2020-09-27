@@ -23,6 +23,7 @@ function Home() {
           className="button"
           href={require("../documents/Amos_Rose_Resume.pdf")}
           target="_blank"
+          rel="noopener noreferrer"
         >
           <span>My Resume</span>
         </a>

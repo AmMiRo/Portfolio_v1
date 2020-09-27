@@ -30,6 +30,24 @@ function Projects() {
             UX designers to expand test coverage, debug eisting features, and
             plan and implement new features.
           </p>
+          <div className="button-container">
+            <a
+              className="button"
+              href="https://github.com/Lambda-School-Labs/mydish-fe"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Front End Code
+            </a>
+            <a
+              className="button"
+              href="https://github.com/Lambda-School-Labs/mydish-be"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Back End Code
+            </a>
+          </div>
         </div>
       </div>
       {/* The Posh Potluck Project */}
@@ -49,6 +67,16 @@ function Projects() {
             application and managed front end collaboration with back-end
             developers and UX designers to design and implement the application.
           </p>
+          <div className="button-container">
+            <a
+              className="button"
+              href="https://github.com/PotluckPlanner-devin/Front-End-React"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Veiw Code
+            </a>
+          </div>
         </div>
         <img src={PoshPotluck} alt="The Posh Potluck logo" />
       </div>
@@ -66,6 +94,24 @@ function Projects() {
             player interacts with the game by determining it's initial input and
             then observes how it evolves. The game requires no further input.
           </p>
+          <div className="button-container">
+            <a
+              className="button"
+              href="https://github.com/AmMiRo/Game-of-Life"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Veiw Code
+            </a>
+            <a
+              className="button"
+              href="https://cs-build-week-1-nine.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Veiw Site
+            </a>
+          </div>
         </div>
       </div>
       <span className="project-end" />
