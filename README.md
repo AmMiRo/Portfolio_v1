@@ -10,7 +10,7 @@ This site is the portfolio for Amos Rose. It's purpose is to serve as a place to
 
 ## Tech Stack
 
-React | Javascript | HTML | CSS | LESS
+React | Javascript | HTML | CSS | LESS | EmailJS
 
 ***
 
@@ -97,7 +97,7 @@ For documentation on JavaScript, check out: https://developer.mozilla.org/en-US/
 
 ---
 
-LESS was used as the language extension for CSS. For more information checkout http://lesscss.org
+LESS was used as the language extension for CSS. For more information checkout https://lesscss.org
 
 #### To watch for changes and automatically compile changes into index.css:
 
@@ -105,3 +105,9 @@ LESS was used as the language extension for CSS. For more information checkout h
 2. In your terminal navigate to the styles folder (`portfolio/src/styles`).
 3. Run `less-watch-compiler less css index.less` in your terminal.
 4. Verify your compiler is working correctly by making a change in the index.less file then check to ensure the corresponding change is in the index.css file.
+
+### EmailJS
+
+---
+
+EmailJS was used as the email service. For more information check out https://www.emailjs.com/

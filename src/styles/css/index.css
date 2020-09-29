@@ -316,11 +316,14 @@ header nav a {
   font-size: 3.6rem;
   margin-top: 100px;
 }
-.skills-container p {
+.skills-container .skills-p {
   font-size: 1.8rem;
   margin-top: 25px;
+  text-align: center;
+  width: 1200px;
+  max-width: 80%;
 }
-.skills-container p span {
+.skills-container .skills-p span {
   font-size: 2.2rem;
 }
 .skills-container .skills-wrapper {

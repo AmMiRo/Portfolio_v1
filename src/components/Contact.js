@@ -39,6 +39,7 @@ function Contact() {
           // if send is successful
           (res) => {
             console.log("Success!", res.status, res.text);
+            setMessage(initialMessage);
             alert(
               "Your message has been recieved! I will be responding to you shortly."
             );
@@ -55,7 +56,7 @@ function Contact() {
   };
 
   const validateForm = (formData) => {
-    const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     // checks name, email, and message for empty strings
     if (
       formData.name === "" ||
