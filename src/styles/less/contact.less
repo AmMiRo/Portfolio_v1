@@ -1,0 +1,85 @@
+.contact-container {
+  .flexbox(nowrap, column, center, center);
+  background-color: @dark-gray;
+  border-bottom: 1px solid @gray;
+
+  h2 {
+    color: @white;
+    margin-top: 75px;
+    font-size: 3.6rem;
+  } // closes h2
+
+  form {
+    .flexbox(nowrap, column, space-around, center);
+    margin-top: 50px;
+    width: 800px;
+    max-width: 80%;
+
+    label {
+      .flexbox(nowrap, row, center, center);
+      width: 100%;
+    } // closes label
+
+    .top-inputs {
+      .flexbox(nowrap, row, space-between, center);
+      width: 100%;
+    } // closes .top-inputs
+
+    input {
+      .form-field();
+      width: 100%;
+
+      &:focus {
+        outline: none;
+      } // closes &:focus
+    } // closes input
+
+    textarea {
+      .form-field();
+      width: 100%;
+
+      &:focus {
+        outline: none;
+      } // closes &:focus
+    } // closes text area
+  } // closes form
+
+  .button-wrapper {
+    .flexbox(nowrap, row, space-around, center);
+    width: 400px;
+    max-width: 80%;
+    margin: 25px;
+
+    button {
+      .buttons(@gray, @white, 40px, 150px);
+      box-shadow: none;
+      //   border: 2px @white solid;
+      font-size: 1.6rem;
+      &:hover {
+        box-shadow: none;
+        opacity: 0.8;
+      } // closes &:hover
+      &:focus {
+        outline: none;
+      } // closes &:focus
+      &:active {
+        opacity: 1;
+      } // closes &:active
+    } // .button
+  } // .button-wrapper
+  .icon-wrapper {
+    .flexbox(wrap, row, center, center);
+
+    i {
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 4.8rem;
+      transition: all 0.2s ease-in-out;
+      margin: 20px;
+      transition: all 0.2s ease-in-out;
+
+      &:hover {
+        color: rgba(255, 255, 255, 1);
+      } // closes &:hover
+    } // closes i
+  } // closes .icon-wrapper
+} // closes .contact-container
