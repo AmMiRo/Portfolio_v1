@@ -5,7 +5,7 @@ import Pulsar from "../images/Pulsar.gif";
 
 function Projects() {
   return (
-    <div className="projects-container">
+    <div className="projects-container" id="projects">
       {/* Title */}
       <h2>My Projects</h2>
       {/* MyDish Project */}

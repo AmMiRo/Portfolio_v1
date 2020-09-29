@@ -3,7 +3,7 @@ import Arrow from "./Arrow.js";
 
 function About() {
   return (
-    <section className="about-wrapper">
+    <section className="about-wrapper" id="about">
       <article className="about-content">
         <h2>A Little About Me</h2>
         <p>
