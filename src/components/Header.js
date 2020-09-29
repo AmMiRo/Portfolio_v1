@@ -8,10 +8,11 @@ function Header() {
         <img className="header-logo" src={Logo} alt="A|R Logo" />
       </div>
       <nav>
-        <a href="#">Top</a>
-        <a href="#">About</a>
-        <a href="#">Projects</a>
-        <a href="#">Contact</a>
+        <a href="#home">Top</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
       </nav>
     </header>
   );

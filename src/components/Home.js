@@ -4,7 +4,7 @@ import FacePic from "../images/Glasses.jpg";
 
 function Home() {
   return (
-    <section className="home-wrapper">
+    <section className="home-wrapper" id="home">
       <div className="home-content">
         <div className="photo-greeting">
           <img src={FacePic} alt="Amos smiling with blue background" />

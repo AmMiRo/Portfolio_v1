@@ -450,7 +450,6 @@ header nav a {
   justify-content: center;
   align-items: center;
   background-color: #3e3e3e;
-  border-bottom: 1px solid #343434;
 }
 .contact-container h2 {
   color: #ffffff;
@@ -576,6 +575,19 @@ header nav a {
 }
 .contact-container .icon-wrapper i:hover {
   color: #ffffff;
+}
+footer {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #3e3e3e;
+}
+footer p {
+  color: #ffffff;
+  margin: 50px;
+  font-size: 1.2rem;
 }
 /*!
  * Font Awesome Free 5.14.0 by @fontawesome - https://fontawesome.com
