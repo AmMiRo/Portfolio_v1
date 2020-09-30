@@ -105,7 +105,7 @@ function Projects() {
             </a>
             <a
               className="button"
-              href="https://cs-build-week-1-nine.vercel.app/"
+              href="https://ammiro-gol.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
             >
