@@ -4,6 +4,7 @@
 
   .home-content {
     .flexbox(nowrap, column, center, center);
+
     .photo-greeting {
       .flexbox(nowrap, row, space-around, center);
       margin-top: 20vh;
@@ -13,10 +14,15 @@
       img {
         border-radius: 100%;
         width: 250px;
+
+        @media @mid {
+          margin-bottom: 20px;
+        } // closes img media mid
       } // closes img
 
       .greeting {
         .flexbox(nowrap, column, center, center);
+        text-align: center;
 
         h1 {
           font-size: 7rem;
@@ -25,24 +31,41 @@
           strong {
             font-weight: 600;
           } // closes strong
+
+          @media @small {
+            font-size: 5rem;
+          } // closes h1 media small
         } // closes h1
         h2 {
           color: @dark-gray;
           margin-top: 25px;
-        }
+
+          @media @small {
+            font-size: 3.6rem;
+          } // closes h2 media small
+        } // closes h2
       } // closes .greeting
+
+      @media @mid {
+        .flexbox(nowrap, column, space-around, center);
+        width: 90%;
+      } // closes photo-greeting media mid
     } // closes .photo-greeting
 
     p {
       margin-top: 50px;
       font-size: 2.4rem;
-      max-width: 80%;
+      width: 80%;
       text-align: center;
+
+      @media @small {
+        font-size: 1.6rem;
+      } // closes p media small
     } // closes p
 
     .button {
       .buttons(@green, @black, 50px, 200px);
-      margin-top: 50px;
+      margin: 50px 0;
     } // closes .button
   } // closes .home-content
 

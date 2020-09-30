@@ -12,7 +12,7 @@
     .flexbox(nowrap, column, space-around, center);
     margin-top: 50px;
     width: 800px;
-    max-width: 80%;
+    max-width: 90%;
 
     label {
       .flexbox(nowrap, row, center, center);
@@ -22,6 +22,10 @@
     .top-inputs {
       .flexbox(nowrap, row, space-between, center);
       width: 100%;
+
+      @media @mid {
+        .flexbox(nowrap, column, center, center);
+      } // closes .top-inputs media mid
     } // closes .top-inputs
 
     input {
@@ -44,13 +48,14 @@
   } // closes form
 
   .button-wrapper {
-    .flexbox(nowrap, row, space-around, center);
+    .flexbox(wrap, row, space-around, center);
     width: 400px;
     max-width: 80%;
-    margin: 25px;
+    margin: 15px;
 
     button {
       .buttons(@gray, @white, 40px, 150px);
+      margin: 10px;
       box-shadow: none;
       //   border: 2px @white solid;
       font-size: 1.6rem;

@@ -19,7 +19,16 @@
       margin-top: 50px;
       line-height: 3.6rem;
       font-weight: 100;
+
+      @media @small {
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+      } // closes p media small
     } // closes p
+
+    @media @mid {
+      width: 90%;
+    } // closes .about-content media mid
   } // closes .about-content
 
   .arrow-wrapper {

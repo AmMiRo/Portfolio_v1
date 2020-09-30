@@ -1,11 +1,12 @@
 import React from "react";
 import Logo from "../images/AR-logo.png";
+import Menu from "../images/hamburger-menu.png";
 
 function Header() {
   return (
     <header>
-      <div className="header-title">
-        <img className="header-logo" src={Logo} alt="A|R Logo" />
+      <div className="logo-wrapper">
+        <img className="header-logo" src={Logo} alt="A|R logo" />
       </div>
       <nav>
         <a href="#home">Top</a>

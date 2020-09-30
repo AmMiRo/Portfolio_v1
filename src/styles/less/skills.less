@@ -2,10 +2,26 @@
   .flexbox(nowrap, column, space-between, center);
   background-color: @white;
 
-  h2 {
+  .title {
     font-size: 3.6rem;
     margin-top: 100px;
-  } // closes h2
+    text-align: center;
+
+    @media @small {
+      display: none;
+    } // closes .title media small
+  } // closes .title
+
+  .breakpoint-title {
+    display: none;
+
+    @media @small {
+      display: block;
+      font-size: 3.6rem;
+      margin-top: 100px;
+      text-align: center;
+    } // closes .breakpoint-title media small
+  } // closes .breakpoint-title
 
   .skills-p {
     font-size: 1.8rem;
@@ -16,7 +32,15 @@
 
     span {
       font-size: 2.2rem;
+
+      @media @small {
+        font-size: 2rem;
+      } // closes span media small
     } // closes span
+
+    @media @small {
+      font-size: 1.6rem;
+    } // closes p media small
   } // closes p
 
   .skills-wrapper {
@@ -32,14 +56,31 @@
       img {
         width: 75px;
         height: 75px;
+
+        @media @small {
+          width: 35px;
+          height: 35px;
+        } // closes img media small
       } // closes img
 
       p {
         color: @black;
         text-align: center;
         margin-top: 5px;
+
+        @media @small {
+          font-size: 1.2rem;
+        } // closes p media small
       } // closes p
+
+      @media @small {
+        margin: 15px;
+      } // closes .skill-wrapper
     } // closes .skill-wrapper
+
+    @media @small {
+      width: 90%;
+    } // closes .skills-wrapper
   } // closes .skills-wrapper
 
   .arrow-wrapper {

@@ -17,7 +17,8 @@ import Arrow from "./Arrow.js";
 function Skills() {
   return (
     <section className="skills-container" id="skills">
-      <h2>Languages / Frameworks / Skills</h2>
+      <h2 className="title">Languages / Frameworks / Skills</h2>
+      <h2 className="breakpoint-title">Skills</h2>
       <p className="skills-p">
         JavaScript <span>|</span> Python <span>|</span> HTML5 <span>|</span> CSS
         <span>|</span> Sass/Less <span>|</span> React <span>|</span> React

@@ -1,14 +1,22 @@
 header {
   .flexbox(nowrap, row, space-between, center);
   background-color: @dark-gray;
-  height: 7.5vh;
+  height: 75px;
   position: fixed;
   top: 0;
   width: 100%;
 
-  .header-title {
+  @media @large {
+    .flexbox(nowrap, row, center, center);
+  } // closes @media @large
+
+  .logo-wrapper {
     height: 100%;
     margin-left: 5%;
+
+    @media @large {
+      display: none;
+    } // closes @ media @ large
 
     img {
       height: 100%;
@@ -17,13 +25,21 @@ header {
 
   nav {
     .flexbox(nowrap, row, space-between, center);
-    width: 30%;
-    max-width: 350px;
+    width: 350px;
     margin-right: 5%;
 
     a {
       color: @white;
       font-size: 2rem;
+      text-decoration: none;
+
+      @media @small {
+        font-size: 1.4rem;
+      } // closes a media small
     } // closes a
+
+    @media @large {
+      margin: 15px;
+    } // closes nav media large
   } // closes nav
 } // closes header

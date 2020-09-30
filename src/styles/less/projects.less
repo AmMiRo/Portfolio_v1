@@ -19,9 +19,30 @@
     border-radius: 10px;
     box-shadow: 10px 10px 10px 1px rgba(0, 0, 0, 0.25);
 
+    .breakpoint-wrapper {
+      h3 {
+        display: none;
+
+        @media @large {
+          display: block;
+          margin-left: 20px;
+        } // closes h3 image large
+      } // closes h3
+
+      @media @large {
+        .flexbox(nowrap, row, center, center);
+        width: 60%;
+        margin-top: 20px;
+      } // closes .breakpoint-wrapper media large
+    } // closes breakpoint-wrapper
+
     img {
       width: 250px;
       box-shadow: 10px 10px 5px -5px rgba(0, 0, 0, 0.5);
+
+      @media @large {
+        width: 100px;
+      } // closes img media large
     } // closes img
 
     .radius-img {
@@ -34,6 +55,10 @@
 
       h3 {
         margin-top: 15px;
+
+        @media @large {
+          display: none;
+        } // closes h3 media large
       } // closes h3
 
       p {
@@ -52,8 +77,30 @@
           margin: 15px;
         } // closes .button
       } // closes .button-container
+
+      @media @large {
+        text-align: center;
+        max-width: 90%;
+      } //  closes project-description media large
     } // closes .project-description
+
+    @media @large {
+      .flexbox(nowrap, column, space-around, center);
+    } // closes .project-wrapper media large
+
+    @media @mid {
+      max-width: 90%;
+    } // closes .project-wrapper media mid
   } // closes .project-wrapper
+
+  .reverse-project {
+    .flexbox(nowrap, row-reverse, space-around, center);
+
+    @media @large {
+      .flexbox(nowrap, column, space-around, center);
+    } // closes .reverse-project @media @large
+  } // closes .reverse-project
+
   .project-end {
     margin-bottom: 100px;
   } // closes .project-end

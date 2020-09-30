@@ -10,7 +10,10 @@ function Projects() {
       <h2>My Projects</h2>
       {/* MyDish Project */}
       <div className="project-wrapper">
-        <img className="radius-img" src={MyDish} alt="MyDish logo" />
+        <div className="breakpoint-wrapper">
+          <img className="radius-img" src={MyDish} alt="MyDish logo" />
+          <h3>MyDish</h3>
+        </div>
         <div className="project-description">
           <h3>MyDish</h3>
           <p>
@@ -51,9 +54,13 @@ function Projects() {
         </div>
       </div>
       {/* The Posh Potluck Project */}
-      <div className="project-wrapper">
+      <div className="project-wrapper reverse-project">
+        <div className="breakpoint-wrapper">
+          <img src={PoshPotluck} alt="The Posh Potluck logo" />
+          <h3>Posh Potluck</h3>
+        </div>
         <div className="project-description">
-          <h3>The Posh Potluck</h3>
+          <h3>Posh Potluck</h3>
           <p>
             React <span>|</span> Redux <span>|</span> Material-UI
             <span>|</span> NodeJS <span>|</span> Express <span>|</span> SQLite3
@@ -78,11 +85,13 @@ function Projects() {
             </a>
           </div>
         </div>
-        <img src={PoshPotluck} alt="The Posh Potluck logo" />
       </div>
       {/* Game of Life Project */}
       <div className="project-wrapper">
-        <img src={Pulsar} alt="Pulsar ship" />
+        <div className="breakpoint-wrapper">
+          <img src={Pulsar} alt="Pulsar ship" />
+          <h3>Game of Life</h3>
+        </div>
         <div className="project-description">
           <h3>Game of Life</h3>
           <p>
