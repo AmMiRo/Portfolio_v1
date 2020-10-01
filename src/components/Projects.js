@@ -23,14 +23,12 @@ function Projects() {
           </p>
           <p>
             MyDish is a mobile application that allows users to create, share,
-            and edit recipes with version control functionality. Built to the
-            specifications of our stakeholder and written in React Native, it is
-            functional on both iOS and Android devices.
+            and edit recipes with version control functionality.
           </p>
           <p>
             Working remotely as a full-stack developer, I collaborated with the
             cross functional team of full-stack developers, data scientists, and
-            UX designers to expand test coverage, debug eisting features, and
+            UX designers to expand test coverage, debug existing features, and
             plan and implement new features.
           </p>
           <div className="button-container">
@@ -66,7 +64,7 @@ function Projects() {
             <span>|</span> NodeJS <span>|</span> Express <span>|</span> SQLite3
           </p>
           <p>
-            The Posh Potluck is a web application that allows users to organize,
+            Posh Potluck is a web application that allows users to organize,
             plan, and share potluck events.
           </p>
           <p>
@@ -100,7 +98,7 @@ function Projects() {
           <p>
             This application is an implementation of the Game of Life. The Game
             of Life is a 0-player game devised by John Horton Conway in 1970. A
-            player interacts with the game by determining it's initial input and
+            player interacts with the game by determining its initial input and
             then observes how it evolves. The game requires no further input.
           </p>
           <div className="button-container">

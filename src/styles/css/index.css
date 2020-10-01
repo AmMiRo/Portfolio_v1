@@ -190,7 +190,7 @@ header nav {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 350px;
+  width: 400px;
   margin-right: 5%;
 }
 header nav a {
@@ -284,12 +284,14 @@ header nav a {
 .home-wrapper .home-content p {
   margin-top: 50px;
   font-size: 2.4rem;
+  line-height: 3.6rem;
   width: 80%;
   text-align: center;
 }
 @media (max-width: 600px) {
   .home-wrapper .home-content p {
     font-size: 1.6rem;
+    line-height: 2.4rem;
   }
 }
 .home-wrapper .home-content .button {
