@@ -8,7 +8,7 @@ This site is the portfolio for Amos Rose. It's purpose is to serve as a place to
 
 ## Tech Stack
 
-React | JavaScript | HTML | CSS | LESS | EmailJS
+React | JavaScript | HTML | CSS | Less | EmailJS
 
 ---
 
