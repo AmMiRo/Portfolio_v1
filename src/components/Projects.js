@@ -68,7 +68,7 @@ function Projects() {
             plan, and share potluck events.
           </p>
           <p>
-            I Lead a team of 3 developers to create the front end of the
+            I Led a team of 3 developers to create the front end of the
             application and managed front end collaboration with back-end
             developers and UX designers to design and implement the application.
           </p>
