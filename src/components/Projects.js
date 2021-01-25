@@ -79,7 +79,7 @@ function Projects() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Veiw Code
+              View Code
             </a>
           </div>
         </div>
@@ -108,7 +108,7 @@ function Projects() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Veiw Code
+              View Code
             </a>
             <a
               className="button"
@@ -116,7 +116,7 @@ function Projects() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Veiw Site
+              View Site
             </a>
           </div>
         </div>
