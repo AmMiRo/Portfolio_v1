@@ -30,10 +30,7 @@ function Contact() {
     } else if (validateForm(message)) {
       emailjs
         .send(
-          "service_xfiv7lg",
-          "template_jtp5kvf",
-          message,
-          "user_438guekYdXIfwArsFuL1g"
+          // See email js docs
         )
         .then(
           // if send is successful

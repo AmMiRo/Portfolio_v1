@@ -1,8 +1,8 @@
 # Portfolio
 
-This site is the portfolio for Amos Rose. It's purpose is to serve as a place to showcase his skills and projects as a developer.
+This is a former portfolio for Amos Rose made in 2020.
 
-## A live version of this app can be found at https://www.amosrose.com
+## An updated version of Amos' portfolio can be found at https://www.amosrose.com
 
 ---
 
